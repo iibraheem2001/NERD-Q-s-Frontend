@@ -1,14 +1,14 @@
 # Include in this doc the required information for your software reqs for your project as a whole
 
-# Dependancies
+## Dependancies
 
 React,
 Js,
 CSS,
-Axios, 
-NPM, 
-Nodemon, 
+Axios,
+NPM,
+Nodemon,
 OpenTriviaDB API,  
 MongoDB,
-Mongo Atlas, 
+Mongo Atlas,
 React-Bootstrap
