@@ -23,6 +23,9 @@ OUT - What will your product not do.
 # Minimum Viable Product
 Functional calls to Trivia API and backend Server, User can sign in and authenticate with Auth0, Can choose between a minimum of three Categories for Trivia Sessions.
 
+Stretch Goals
+Add Difficulty to the Travia Session Configurator for User to choose from when starting new sessions.
+
 # Data Flow
 User begins with login, after authenticated is greeted with Travia Session Configurator Page, User can configure Travia Session based on 3 catagories (video games, automotive, and sports),
 User can click start button to begin session, Axios call is then made to retrieve Trivia Session from OpenTraviaDB, User completes Travia Session, High Score is updated, Session data saved to dB, User can also configure custom travia via form input which Creates, Updates, or Deletes user generated Travia, User can also click to retrieve Custom Travia from dB representing Global user base Custom Travia Submissions which would then be displayed on page upon click.
