@@ -4,7 +4,7 @@ import Card from "@mui/material/Card";
 // NERD Q's React components
 import MDBox from "components/MDBox";
 import MDTypography from "components/MDTypography";
-import ComboBox from "./AutoComplete/Dropdown";
+import ComboBox from "./AutoComplete/ButtonGroup";
 
 function TraviaOverview() {
   return (
