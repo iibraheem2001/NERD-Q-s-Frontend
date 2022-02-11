@@ -5,7 +5,7 @@ import Box from "@mui/material/Box";
 import axios from "axios";
 
 const handleVideoGamesAPI = async () => {
-  const response = await axios.get(`placeholder`);
+  const response = await axios.get(`http://localhost:3001`);
   const triviaVideoGames = response.data;
   this.setState({ triviaVideoGames });
 };
