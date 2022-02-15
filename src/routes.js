@@ -4,6 +4,11 @@ import Profile from "layouts/profile";
 import SignIn from "layouts/authentication/sign-in";
 // @mui icons
 import Icon from "@mui/material/Icon";
+// import { useAuth0 } from "@auth0/auth0-react";
+// import LoginButton from "./LoginButton";
+// import LogoutButton from "./LogoutButton";
+
+// const { isAuthenticated } = useAuth0();
 
 const routes = [
   {
@@ -37,6 +42,16 @@ const routes = [
     icon: <Icon fontSize="small">login</Icon>,
     route: "/authentication/sign-in",
     component: <SignIn />,
+    // component: isAuthenticated ? <LogoutButton /> : <LoginButton />,
+  },
+  {
+    type: "collapse",
+    name: "Sign Out",
+    key: "sign-out",
+    icon: <Icon fontSize="small">login</Icon>,
+    route: "/authentication/sign-in",
+    component: <SignOut />,
+    // component: isAuthenticated ? <LogoutButton /> : <LoginButton />,
   },
 ];
 

@@ -1,5 +1,5 @@
 import { useState } from "react";
-// import { useAuth0 } from "@auth0/auth0-react";
+import { useAuth0 } from "@auth0/auth0-react";
 // react-router-dom components
 import { Link } from "react-router-dom";
 
@@ -24,12 +24,12 @@ import BasicLayout from "layouts/authentication/components/BasicLayout";
 
 // Images
 import bgImage from "assets/images/bg-sign-in-basic.jpeg";
-import LoginButton from "./LoginButton";
-import LogoutButton from "./LogoutButton";
+import LoginButton from "../../../LoginButton";
+import LogoutButton from "../../../LogoutButton";
 
 function Basic() {
   const [rememberMe, setRememberMe] = useState(false);
-  // const { isAuthenticated } = useAuth0();
+  const { isAuthenticated } = useAuth0();
   const handleSetRememberMe = () => setRememberMe(!rememberMe);
 
   return (
@@ -88,9 +88,9 @@ function Basic() {
               </MDTypography>
             </MDBox>
             <MDBox mt={4} mb={1}>
-              {/* {isAuthenticated ? <LogoutButton /> : <LoginButton />} */}
-              <LoginButton />
-              <LogoutButton />
+              {isAuthenticated ? <LogoutButton /> : <LoginButton />}
+              {/* <LoginButton />
+              <LogoutButton /> */}
             </MDBox>
             <MDBox mt={3} mb={1} textAlign="center">
               <MDTypography variant="button" color="text">
