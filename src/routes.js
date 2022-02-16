@@ -2,6 +2,7 @@ import Dashboard from "layouts/dashboard";
 import Tables from "layouts/tables";
 import Profile from "layouts/profile";
 import SignIn from "layouts/authentication/sign-in";
+import SignOut from "layouts/authentication/sign-out";
 // @mui icons
 import Icon from "@mui/material/Icon";
 // import { useAuth0 } from "@auth0/auth0-react";
